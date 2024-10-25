@@ -45,11 +45,27 @@ class I18n {
 
   changeLanguage (locale) {
     if (this._languages[locale]) {
-      this._languages = locale
+      this._locale = locale
       return locale
     } else {
       return false
     }
+  }
+
+  /**
+   * 给出特定的语言环境，判断是否匹配当前设定的语言环境
+   * @param {String | Array} lang -必选 语言环境
+   */
+  isMatchCurLang (lang) {
+    const curLang = this.language() || ''
+
+    /* 兼容各种可能的语言配置写法，假如当前设定为：zh-CN，则给定的lang中包含zh-CN、zhCN、zh_CN、zh，都认为是匹配的 */
+    const curLang2 = curLang.replace('-', '')
+    const curLang3 = curLang.replace('-', '_')
+    const curLang4 = curLang.split('-')[0]
+
+    if (lang && !Array.isArray(lang)) { lang = [lang] }
+    return lang.includes(curLang) || lang.includes(curLang2) || lang.includes(curLang3) || lang.includes(curLang4)
   }
 
   /**

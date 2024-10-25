@@ -1,105 +1,221 @@
 # h5player for tampermonkey
-网页播放器增强脚本  
-项目地址：[https://github.com/xxxily/h5player](https://github.com/xxxily/h5player)  
-脚本安装地址：[https://greasyfork.org/scripts/381682](https://greasyfork.org/scripts/381682)
 
-## 特性
-* 兼容广泛，所有存在video标签的网页均支持 即使嵌在 iframe、shadowdom下均可兼容
-* 支持跨域控制，跨域受限页面下快捷键一样可以无缝衔接
-* 支持多实例（如：twitter，instagram下亦可兼容）
-* 支持播放进度记录
-* 支持播放速度记录
-* 支持视频画面缩放
-* 支持画中画功能
-* 支持跨Tab控制画中画
-* 支持视频画面截图功能
-* 支持配置式添加自定义功能
+> English  |  **[中文文档](./README-zh.md)**
 
-## 简介
+Web Player Enhancement Script  
 
-HTML5视频播放增强脚本，支持所有H5视频播放网站，全程快捷键控制，支持：倍速播放/加速播放、视频画面截图、画中画、网页全屏、调节亮度、饱和度、对比度、自定义配置功能增强等功能，提供良好的在线播剧体验    
+- Official Website: [h5player.anzz.top](https://h5player.anzz.top)  
+- GitHub: [github.com/xxxily/h5player](https://github.com/xxxily/h5player)  
+- GreasyFork: [greasyfork.org/scripts/381682](https://greasyfork.org/scripts/381682)
+- One-Click Installation: [h5player.anzz.top/h5player.user.js](https://update.greasyfork.org/scripts/381682/HTML5%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%99%A8%E5%A2%9E%E5%BC%BA%E8%84%9A%E6%9C%AC.user.js)
 
-PS：本脚基于：[HTML5播放器增强插件](https://greasyfork.org/users/49622)   但已远超原脚本提供的功能。   
+<br />
 
-由于之前作者已长期不维护，故接坑自己开干，在原作者的基础上进行了大幅度的代码改造，并采用了全新的项目架构进行开发，维护更加方便，逻辑更加清晰，功能更加强大，兼容更多网站  
+## Introduction
+
+This script enhances video playback and is compatible with all H5 video websites, such as: Bilibili, TikTok, Tencent Video, Youku, iQIYI, Xigua Video, YouTube, Weibo Video, Zhihu Video, Sohu Video, Netease Open Class, Baidu Netdisk, AliYun Disk, TED, Instagram, Twitter, and so on.  
+
+The script allows keyboard shortcuts for full course control, supporting functions like speed control for playback, video screenshot, picture-in-picture, webpage full screen, adjusting brightness, saturation, contrast, enhanced customization configurations availability, providing you a pleasing online video playing experience.  
+
+Moreover, it also offers the ability to fast forward short pre/post rolls, speed up learning from online tutorials/educational videos, and privately store offline audio and video files.  
+
+<a href="https://h5player.anzz.top/assets/img/h5player_ui.jpg" target="_blank">
+  <img src="https://h5player.anzz.top/assets/img/h5player_ui.jpg" alt="h5player-ui" />
+</a>
+
+## Application Scenarios
+
+- Endless speed control: control the rhythm freely, no matter how fast or slow.
+- Speed learning: Stay one step ahead with high-speed tutorial and lecture viewing.
+- Enjoy drama: Turn tedious viewing into joyful experience.
+- Quick short films: Say goodbye to boring waiting.
+- Video screenshot: Archive notes, clip and share conveniently.
+- Offline video: View locally, send privately, and create an offline library.
+- Real-time live streaming: Say no to latency, always stay concurrent.
+
+## Technical Features
+
+- Broad compatibility: All webpages with video tags are supported, even those embedded in iframes and shadowdoms.
+- Cross-domain control: Shortcuts seamlessly connect even on cross-domain restricted pages.
+- Multi-instance support (compatible with platforms like Twitter and Instagram).
+- Progress tracking.
+- Speed control memory.
+- Video zooming.
+- Picture-in-picture capability.
+- Cross-Tab control of picture-in-picture.
+- Video screenshot feature.
+- Audio instance control.
+- Offline storage of video/audio files.
+- Live video stream extraction.
+- Customizable feature additions through configurations.  
+
+## Discussion Groups
+
+<br />
+
+| Add me and I'll Invite You to the Group<br/>(Specify: from h5player) | Telegram Group<br/>(<a href="https://t.me/h5player" target="_blank">Join Directly</a>) |
+| :----: | :----: |
+| <img src="https://h5player.anzz.top/assets/img/WeChat2.png?t=2022.11.21" width=280 /> |  <img src="https://h5player.anzz.top/assets/img/tg.jpg?t=2022.11.21" width=280 /> |
+
+<br />
+
+## Custom Functionality
+
+The script already supports most commonly used features. If you need more, you can achieve this through custom configurations.
+For details, refer to: [Custom Configurations](https://h5player.anzz.top/home/customConfiguration.html)  
+<br />
+If you don't know how to program or don't want the hassle, but have a demand for more complex features, you may consider paying the author for 'Paid Customization';  
+[Contact the author through the above WeChat or TG](#Discussion Groups)  
+
+## Installation
+
+> Before installing the script, the [Tampermonkey plug-in](https://www.tampermonkey.net) should be installed first.
+> [Tampermonkey](https://www.baidu.com/s?wd=%E6%B2%B9%E7%8C%B4%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85) is a well-received browser extension for loading user scripts, which supports: Chrome, Edge, Firefox, Safari, Opera, and [numerous domestic brand browsers](https://www.baidu.com/s?wd=%E5%9B%BD%E5%86%85%E6%B5%8F%E8%A7%88%E5%99%A8).
+
+**After installing the Tampermonkey plug-in**, click the link below for one-click installation:
+
+- **[h5player.user.js (Click me for direct installation)](https://update.greasyfork.org/scripts/381682/HTML5%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE%E5%99%A8%E5%A2%9E%E5%BC%BA%E8%84%9A%E6%9C%AC.user.js)**
+
+For more detailed installation help, see here: [Detailed Installation Tutorial](https://h5player.anzz.top/home/install.html)  
+
+## User Guide
+
+- [Feature Manual](https://h5player.anzz.top/home/feature.html)
+- [Frequently Asked Questions Q&A](https://h5player.anzz.top/home/q&a.html)
   
-## 快捷键列表
-|  快捷键   | 说明    |
+## Shortcut Key List
+
+| Shortcut Key | Description |
 | --- | --- |
-| ctrl+\ | 快捷键是否全网页可用，默认true |
-| Ctrl+space | 禁用/启用 该播放插件 |
-| → | 快进5秒 |
-| ← | 后退5秒 |
-| Ctrl+→ | 快进30秒 |
-| Ctrl+← | 后退30秒 |
-| ↑ | 音量升高 10% |
-| ↓ | 音量降低 10% |
-| Ctrl+↑ | 音量升高 20% |
-| Ctrl+↓ | 音量降低 20% |
-| C | 加速播放 +0.1 |
-| X | 减速播放 -0.1 |
-| Z | 正常速度播放 |
-| shift+C | 放大视频画面 +0.1 |
-| shift+X | 缩小视频画面 -0.1 |
-| shift+Z | 恢复视频画面 |
-| shift+P | 进入或退画中画功能 |
-| shift+S | 截图，截取当前画面并保存 |
-| shift+R | 启用或禁止自动恢复播放进度功能 |
-| shift+→ | 画面向右移动10px |
-| shift+← | 画面向左移动10px |
-| shift+↑ | 画面向上移动10px |
-| shift+↓ | 画面向下移动10px |
-| Enter | 进入全屏 |
-| shift+Enter | 进入网页全屏 |
-| N | 下一个/集视频（仅部分网站支持） |
-| D | 上一帧 (截图时进行微调以找到质量最佳的一帧) |
-| F | 下一帧 (不支持netflix，因为快捷键冲突)|
-| E | 亮度增加% |
-| W | 亮度减少% |
-| T | 对比度增加% |
-| R | 对比度减少% |
-| U | 饱和度增加% |
-| Y | 饱和度减少% |
-| O | 色相增加 1 度 |
-| I | 色相减少 1 度 |
-| K | 模糊增加 1 px |
-| J | 模糊减少 1 px |
-| Q | 图像复位 |
-| S | 画面旋转 90 度 |
+| → | Fast forward 5 seconds |
+| ← | Rewind 5 seconds |
+| Ctrl+→ | Fast forward 30 seconds |
+| Ctrl+← | Rewind 30 seconds |
+| ↑ | Volume increase 5% |
+| ↓ | Volume decrease 5% |
+| Ctrl+↑ | Volume increase 20% |
+| Ctrl+↓ | Volume decrease 20% |
+| C | Speed up playback +0.1 |
+| X | Slow down playback -0.1 |
+| Z | Normal speed playback |
+| shift+C | Enlarge video screen +0.05 |
+| shift+X | Shrink video screen -0.05 |
+| shift+Z | Restore video screen |
+| shift+P | Enter or exit picture in picture function |
+| shift+S | Screenshot, capture current frame and save |
+| shift+D | Download audio/video files (experimental feature) |
+| shift+R | Enable or disable automatic resume playback progress feature |
+| shift+→ | Move screen to the right 10px |
+| shift+← | Move screen to the left 10px |
+| shift+↑ | Move screen upwards 10px |
+| shift+↓ | Move screen downwards 10px |
+| Enter | Enter/Exit Full Screen |
+| shift+Enter | Enter/Exit Web Full Screen |
+| N | Next video/chapter (only supported on some websites) |
+| D | Previous frame (for fine-tuning when taking screenshots to find the best quality frame) |
+| F | Next frame (for fine-tuning when taking screenshots to find the best quality frame) |
+| E | Increase brightness % |
+| W | Decrease brightness % |
+| T | Increase contrast% |
+| R | Decrease contrast % |
+| U | Increase saturation % |
+| Y | Decrease saturation % |
+| O | Increase hue by 1 degree |
+| I | Decrease hue by 1 degree |
+| K | Increase blur by 1 px |
+| J | Decrease blur by 1 px |
+| Q | Image reset |
+| S | Rotate screen by 90 degrees |
+| M | Flip screen horizontally |
+| shift+M | Flip screen vertically |
+| ctrl+\ | Whether the shortcut key is available on the whole webpage, default is true |
+| ~~Ctrl+space~~ | ~~Disable/Enable this playback plugin~~ |
 
-## 支持网站列表
+## Supported Website List
 
-##### 本插件支持支持所有使用HTML5技术进行视频播放的网站
+> This plugin supports all websites that use HTML5 technology for video playback
 
-下面列出一些常见网站列表方便点击测试：
-* [https://netflix.com](https://netflix.com)
-* [https://www.ted.com](https://www.ted.com)
-* [https://www.youtube.com](https://www.youtube.com)
-* [https://www.instagram.com](https://www.instagram.com)
-* [https://twitter.com](https://twitter.com)
-* [https://www.pornhub.com](https://www.pornhub.com)
-* [https://www.bilibili.com](https://www.bilibili.com)
-* [https://www.douyu.com](https://www.douyu.com)
-* [https://www.huya.com](https://www.huya.com)
-* [https://www.iqiyi.com](https://www.iqiyi.com)
-* [https://www.youku.com](https://www.youku.com)
-* [https://weibo.com/tv](https://weibo.com/tv)
-* [https://krcom.cn](https://krcom.cn)
-* [https://tv.sohu.com](https://tv.sohu.com)
-* [https://v.qq.com](https://v.qq.com)
-* [网易公开课](https://open.163.com/ted)
-* [QQ音乐 - MV](https://y.qq.com/portal/mv_lib.html)
+Below is a list of some common websites for easy click testing:
 
-如果你常去的网站支持不好欢迎提[issues](https://github.com/xxxily/h5player/issues)
+| Video Websites | URL |
+| --- | --- |
+| Bilibili | [https://bilibili.com](https://bilibili.com) |
+| Tencent Video | [https://v.qq.com](https://v.qq.com) |
+| Douyin | [https://douyin.com](https://douyin.com) |
+| iQIYI | [https://iqiyi.com](https://www.iqiyi.com) |
+| Youku | [https://youku.com](https://www.youku.com) |
+| YouTube | [https://youtube.com](https://www.youtube.com) |
+| TED | [https://www.ted.com](https://www.ted.com) |
+| Instagram | [https://www.instagram.com](https://www.instagram.com) |
+| Twitter | [https://twitter.com](https://twitter.com) |
+| Telegram web | [https://web.telegram.org](https://web.telegram.org) |
+| Pornhub | [https://www.pornhub.com](https://www.pornhub.com) |
+| Douyu | [https://www.douyu.com](https://www.douyu.com) |
+| Huya | [https://www.huya.com](https://www.huya.com) |
+| Weibo TV | [https://weibo.com/tv](https://weibo.com/tv) |
+| Kueran Video | [https://krcom.cn](https://krcom.cn) |
+| Sohu Video | [https://tv.sohu.com](https://tv.sohu.com) |
+| NetEase Open Class | [https://open.163.com/ted](https://open.163.com/ted) |
+| QQ Music - MV | [https://y.qq.com/portal/mv_lib.html](https://y.qq.com/portal/mv_lib.html) |
+| Phoenix Video | [https://v.ifeng.com/](https://v.ifeng.com) |
+| Fun TV | [https://www.fun.tv](https://www.fun.tv) |
+| PPTV Polymeric Power | [https://www.pptv.com](https://www.pptv.com) |
+| Qilu Net | [https://v.iqilu.com](https://v.iqilu.com) |
+| Sunshine Satellite TV | [https://www.isuntv.com](https://www.isuntv.com) |
+| CCTV Network | [https://www.cntv.cn](https://www.cntv.cn) |
+| Mango TV | [https://www.mgtv.com](https://www.mgtv.com) |
+| Watermelon Video | [https://www.ixigua.com](https://www.ixigua.com) |
+| Xin Chuan Broadband | [https://v.zhibo.tv](https://v.zhibo.tv) |
+| China Sports | [https://video.zhibo.tv](https://video.zhibo.tv) |
+| AcFun | [https://www.acfun.cn](https://www.acfun.cn) |
+| Kwai | [https://www.kuaishou.com](https://www.kuaishou.com) |
+| MioMio Danmu Website | [https://www.miomio.tv](https://www.miomio.tv) |
+| 56 net | [https://www.56.com](https://www.56.com) |
+| VK | [https://vk.com](https://vk.com) |
+| Vine | [https://vine.co](https://vine.co) |
+| Magisto | [https://www.magisto.com](https://www.magisto.com) |
+| CBS | [https://www.cbs.com](https://www.cbs.com) |
+| FC2 Video | [https://video.fc2.com](https://video.fc2.com) |
 
-## 其他说明
-1、该脚本是利用业余时间进行开发维护的，有问题欢迎反馈，但不接受任何差评    
-2、如果发现脚本完全不可用，一般都不是脚本本身的问题，建议先删除后再次安装即可
+| Audio Websites | URL |
+| --- | --- |
+| Ximalaya | [https://www.ximalaya.com/](https://www.ximalaya.com/) |
+| Lazy to Listen | [https://www.lrts.me/](https://www.lrts.me/) |
+| Dragonfly FM | [https://www.qtfm.cn/](https://www.qtfm.cn/) |
+| Kugou Audiobook | [https://www.kugou.com/ts/](https://www.kugou.com/ts/) |
+| Baidu Wangpan Audio Files | [https://pan.baidu.com/](https://pan.baidu.com/) |
+| AliYun Disk Audio Files | [https://aliyundrive.com/](https://aliyundrive.com/) |
+| Other Network Disk Audio Files | ...... |
 
-## 更新日志
-* [https://github.com/xxxily/h5player/blob/master/changeLog.md](https://github.com/xxxily/h5player/blob/master/changeLog.md)
+If the website you frequent is not well supported, feel free to raise [issues](https://github.com/xxxily/h5player/issues)  
 
-## 给我赞赏
-如果我的努力给你带来了便利，请不要吝啬你的赞赏
+## Other Notes
 
-![如果我的努力给你带来了便利，请不要吝啬你的赞赏](https://cdn.jsdelivr.net/gh/xxxily/h5player@master/donate.png "如果我的努力给你带来了便利，请不要吝啬你的赞赏")
+- 1. This script is developed and maintained in my spare time. Feedback is welcome, but any negative reviews are not accepted.
+- 2. If you find that the script is completely unusable, it's generally not a problem with the script itself. You are advised to try reinstalling the plugin.
+
+## Update Log
+
+- [H5player ChangeLog](https://github.com/xxxily/h5player/blob/master/changeLog.md)
+
+## Support the Author
+
+If my efforts have brought convenience to you, please do not hesitate to give your appreciation.  
+
+[How much in donations does an open-source work with a million installations receive in a year?](https://h5player.anzz.top/home/aboutDonate)  
+
+PayPal: [paypal.me/BlazeLiu](https://paypal.me/BlazeLiu)  
+
+<p>
+  <a href="https://h5player.anzz.top" target="_blank">
+  <img src="https://h5player.anzz.top/assets/img/donate.png" width=480 alt="如果我的努力给你带来了便利，请不要吝啬你的赞赏" />
+  </a>
+</p>
+
+<br />
+
+<p align="center">
+  <a href="https://trackgit.com" target="_blank">
+  <img src="https://us-central1-trackgit-analytics.cloudfunctions.net/token/ping/l92cniondymy2ux36t8l" alt="trackgit-views" />
+  </a>
+</p>
